@@ -1,1 +1,61 @@
-/*Personal Web Page Style Sheet */
+header, main, aside {display:block;
+                      background-color: #869dc7;
+}
+header {background-color: #869dc7;
+        height: 110px;
+        width: 100%;
+        background-size: contain;
+}
+h1 {text-align: center;
+    margin: 0;
+    font-size: 3em;
+    vertical-align: middle;
+}
+h2,h3 {font: small-caps bold 15px/30px Georgia, serif;
+      background-color: #869dc7;
+      text-align: center;
+}
+aside {float: right;
+	 width: 200px;
+   padding-top: 18px;
+}
+main {background-color: #ffffff;
+	 color: #000000;
+	 padding: 20px 20px;
+     overflow: auto;
+	 }
+main ul{list-style-type: none;
+  margin: auto;
+ position: relative;}
+main p {text-indent: 50px;
+        padding-bottom: 8.5em;
+}
+aside h3 {padding-bottom: 2px;
+		border-bottom: 1px solid #000000;
+		margin: 10px;
+		font-size: 0.90em;
+		color: #000000;
+}
+.news {font-size: 0.80em;
+	   margin: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+            main {margin: 0px;}
+			body {margin: 0px;}
+			#wrapper {min-width: auto;}
+						aside {float: none; width: auto;}
+			main li {display: inline-block; padding: 0.5em;}
+			main ul {text-align: center;}
+			h1, h2, h3 {font-size: 120%;}
+			p {font-size: 90%;}
+			    header {display: none;}
+    #mediatext {display: block;
+}
+@media only screen and (max-width: 768px){
+			#wrapper {min-width: auto;}
+			h1, h2, h3 {font-size: 100%;}
+			p, .news {font-size: 80%;}
+			main ul, main li {padding: 0px;}
+			main li {display: block;}
+}
